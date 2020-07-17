@@ -1,0 +1,43 @@
+body {
+    font-family: Helvetica, Arial, sans-serif;
+}
+.first-section, .second-section, .fourth-section {
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 1.5rem 1rem;
+    justify-content: center;
+    margin-bottom: 1rem;
+    background-color: #BCE3E0;
+    border-radius: 5px;
+}
+.first-section {
+    font-weight: bold;
+}
+.textbox1 {
+    flex-basis: 48%;
+    margin-right: 3%;
+    margin-left: .5%;
+}
+.textbox2 {
+    flex-basis: 48%;
+    margin-right: .5%;
+}
+input {
+    width: 100%;
+}
+button {
+    padding: .75rem 4rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+    background-color: cadetblue;
+    color: white;
+    border-style: none;
+    border-radius: 3px;
+}
+.third-section {
+    font-size: 2rem;
+}
+.quarters, .dimes, .nickels, .pennies {
+    font-size: 1.5rem;
+    padding: 0 6rem;
+}

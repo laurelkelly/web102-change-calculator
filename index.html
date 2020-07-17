@@ -3,11 +3,54 @@
   <head>
     <meta charset="utf-8">
     <title>Change Calculator</title>
+    <link href="index-style.css" rel="stylesheet">
   </head>
   <body>
-    <!-- Write your markup here -->
 
-    <!-- Don't forget to add your <script> tag here -->
+    <h1>Change Calculator</h1>
 
+    <section class="first-section">
+      <div class="textbox1">
+        <label for="amount-due">How much is due for the sale?</label>
+        <input id="amount-due" type="text"/>
+      </div>
+
+      <div class="textbox2">
+        <label for="amount-received">How much has the customer given you?</label>
+        <input id="amount-received" type="text"/>
+      </div>
+    </section>
+
+    <section class="second-section">
+      <button id="calculate-change" type="button">Calculate!</button>
+    </section>
+
+    <!-- onClick="calculateChange()" -->
+
+    <section class="third-section">
+      <p>Dollars<br></p>
+      <p id="dollars-output">0</p>
+    </section>
+
+    <section class="fourth-section">
+      <div class="quarters">
+        <p>Quarters</p><br>
+        <p id="quarters-output">0</p>
+      </div>
+      <div class="dimes">
+        <p>Dimes</p><br>
+        <p id="dimes-output">0</p>
+      </div>
+      <div class="nickels">
+        <p>Nickels</p><br>
+        <p id="nickels-output">0</p>
+      </div>
+      <div class="pennies">
+        <p>Pennies</p><br>
+        <p id="pennies-output">0</p>
+      </div>
+    </section>
+
+    <script src="main.js"></script>
   </body>
 </html>
