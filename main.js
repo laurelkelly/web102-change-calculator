@@ -5,12 +5,13 @@ var dollars, quarters, dimes, nickels, pennies;
 function calculateChange() {
   var amountDue = document.getElementById('amount-due').value;
   var amountReceived = document.getElementById('amount-received').value;
-  var change = amountReceived - amountDue;
-  //document.getElementById('change-output').innerHTML = change.toFixed(2);
+  var change = (amountReceived - amountDue).toFixed(2);
+  console.log(change)
 
   var dollars = Math.floor(change);
   document.getElementById("dollars-output").innerHTML = dollars;
-  var remainder = (change - dollars) * 100;
+  var remainder = ((change - dollars) * 100).toFixed(2);
+  console.log(remainder)
 
   var quarters = Math.floor(remainder / 25);
   document.getElementById("quarters-output").innerHTML = quarters;
