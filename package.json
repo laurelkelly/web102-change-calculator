@@ -2,6 +2,10 @@
     "name": "change-calculator",
     "version": "0.2.0",
     "description": "WEB101 Change Calculator",
+    "engines": {
+        "node": "14.x",
+        "npm": "6.x"
+    },
     "private": true,
     "repository": {},
     "license": "mit",
